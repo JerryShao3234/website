@@ -5,6 +5,35 @@
 <body>
 
 <head>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -46,12 +75,13 @@
     
 </head>
 <body>
-  <nav class="w3-bar w3-black">
-  <a href="#Home" class="w3-button w3-bar-item">Home</a>
-  <a href="#Projects" class="w3-button w3-bar-item">Projects</a>
-  <a href="#Hobbies" class="w3-button w3-bar-item">Hobbies</a>
-  <a href="#Info" class="w3-button w3-bar-item">Info</a>
-</nav>
+
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
     
   <div class="header">
   <h1>Greetings, my name is Jerry</h1>
