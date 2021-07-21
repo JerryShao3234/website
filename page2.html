@@ -1,0 +1,122 @@
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://en.wikipedia.org/wiki/Main_Page">
+<body>
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        * {
+			box-sizing: border-box;
+        }
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+			text-align: center;
+		}
+
+		/* Clearfix (clear floats) */
+			.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+        
+		.header {
+			padding: 60px;
+			text-align: center;
+			background: #1abc9c;
+			color: white;
+			font-size: 30px;
+		}
+        
+		.img {
+			float: left;
+			width:  100px;
+			height: 100px;
+			object-fit: cover;
+		}
+        
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border: 1px solid #e7e7e7;
+			background-color: #f3f3f3;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: #666;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+			background-color: #ddd;
+		}
+
+		li a.active {
+			color: white;
+			background-color: #04AA6D;
+		}
+	}
+</style>
+    
+</head>
+<body>
+
+  <ul>
+  <li><a class="active" href="https://en.wikipedia.org/wiki/PL-15">Home</a></li>
+  <li><a href="https://github.com/JerryShao3234">GitHub</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/PL-15">Projects</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/PL-15">Blog</a></li>
+</ul>
+    
+  <div class="header">
+  <h1>Greetings, my name is Jerry</h1>
+  <p>This is a proof of concept or place to blog if anything</p>
+  <p>Please feel free to look around</p>
+  </div>
+    
+    <p>I'm a Computer Engineering student at UBC.</p>
+    <p>I enjoy software and firmware coding as well as FPGA design.</p>
+    <p>One of my favourite hobbies is exploring engineering application to military design. These include tanks, missiles, and fighter planes.</p>
+
+    
+<div class="row">
+  <div class="column">
+    <a href="https://www.ubc.ca/">
+    <img src="UBC.png" alt="UBC" style="width:220px;height:287px;">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://ece.ubc.ca/">
+    <img src="ece.png" alt="ECE" style="width:220px;height:287px;">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor">
+    <img src="image.png" alt="T-90" style="width:220px;height:287px;">
+    </a>
+  </div>
+</div>
+
+	
+</body>
+</html>
