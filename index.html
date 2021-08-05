@@ -58,6 +58,13 @@
 			height: 100px;
 			object-fit: cover;
 		}
+	    
+	 	   .sticky {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+
         
 		ul {
 			list-style-type: none;
@@ -137,6 +144,21 @@ Jerry Shao.
     </a>
   </div>
 </div>
+	
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("ul");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 	
 </body>
