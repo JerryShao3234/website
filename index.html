@@ -16,6 +16,19 @@
         * {
 			box-sizing: border-box;
           }
+	   	 .parallax {
+ 			 /* The image used */
+ 			 background-image: url('image.png');
+
+			  /* Full height */
+			  height: 100%; 
+
+ 			 /* Create the parallax scrolling effect */
+ 			 background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+ 			 background-size: cover;
+		}
 
 		.column {
 			float: left;
@@ -98,7 +111,16 @@
     <p>I enjoy software and firmware coding as well as FPGA design.</p>
     <p>One of my favourite hobbies is exploring engineering application to military design. These include tanks, missiles, and fighter planes.</p>
 
-    
+ <div class="parallax"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax"></div>
+	
 <div class="row">
   <div class="column">
     <a href="https://www.ubc.ca/">
