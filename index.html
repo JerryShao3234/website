@@ -81,17 +81,13 @@ div.ex2 {
 		}
 
 		.column {
-			float: left;
-			width: 33.33%;
-			padding: 5px;
-			text-align: center;
+			flex: 33.33%;
+			padding: 100px;
 		}
 
 		/* Clearfix (clear floats) */
-			.row::after {
-			content: "";
-			clear: both;
-			display: table;
+		.row {
+			display: flex;
 		}
         
 		.header {
@@ -180,7 +176,7 @@ div.ex2 {
     <p>One of my favourite hobbies is exploring engineering application to military design. These include tanks, missiles, and fighter planes.</p>
     </div>
 	    
-<div class="row">
+<div class="row" >
   <div class="column">
     <a href="https://www.ubc.ca/">
     <img src="UBC.png" alt="UBC" style="width:198px;height:258px;">
@@ -188,12 +184,12 @@ div.ex2 {
   </div>
   <div class="column">
     <a href="https://ece.ubc.ca/">
-    <img src="ece.png" alt="ECE" style="width:261px;height:258px;">
+    <img src="ece.png" alt="ECE" style="width:261px;height:260px;">
     </a>
   </div>
   <div class="column">
     <a href="https://www.ieee.org/membership/index.html">
-    <img src="IEEE-Logo.jpg" alt="IEEE" style="width:261px;height:258px;">
+    <img src="IEEE-Logo.jpg" alt="IEEE" style="width:300px;height:260px;">
     </a>
   </div>
 </div>
