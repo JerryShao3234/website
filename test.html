@@ -1,119 +1,242 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: #1abc9c;
-  padding: 20px;
-  font-family: Arial;
-}
+    #navbar{
+      list-style-type: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      padding: 0px;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+    }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
+    body {
+      background-color: rgb(107, 101, 101);
+      padding: 0px;
+      font-family: Arial;
+    }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+    /* Center website */
+    .main2 {
+      max-width: 1250px;
+      margin: auto;
+     
+    }
 
-.row {
-  margin: 8px -16px;
-}
+    h1 {
+      font-size: 60px;
+      word-break: break-all;
+      padding-top: 55px;
+    }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+    .h2 {
+      font-size: 30px;
+      color: aliceblue;
+      word-break: break-all;
+    }
 
-/* Create 4 columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
+    .row {
+      margin: 8px -16px;
+    }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
+    /* Create 4 columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
+    /* Content */
+    .content {
+      background-color: rgb(223, 197, 197);
+      padding: 18px;
+      height: 350px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    #navbar {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    #navbar a {
+      margin: 0;
+      padding: 0;
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- MAIN (Center website) -->
-<div class="main">
-
-<h1>PROJECTS</h1>
-
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="DNA_1280p.jpg" alt="DNA" style="width:216px;height:144px;">
-      <h3>DNA Comparator</h3>
-      <p>This is a C program that takes in a DNA sequence as a string and determines the similarity between each candidate and a set of nucleotides. It follows a specific rubric to determine this quantifiable score.</p>
-    </div>
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="https://github.com/JerryShao3234 " target="_blank">GitHub</a>
+    <a class="active" href="test.html">Projects</a>
+    <a href="mil.html">Blog</a>
   </div>
-  <div class="column">
-    <div class="content">
-    <img src="602abada899c5.image.jpg" alt="Baccarat" style="width:216px;height:144px;">
-      <h3>Baccarat</h3>
-      <p>This is an implementation of the classic board game Baccarat using SystemVerilog HDL synthesized on a DE1-SoC FPGA board. It uses an internal clock-based algorithm to emulate the dealt cards.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="/w3images/nature.jpg" alt="CupCap" style="width:216px;height:144px;">
-      <h3>Water Level Measurer</h3>
-      <p>This is an tool that outputs audibly the amount of water in a plastic cup by using the dielectric properties of liquids. This was built on a 8051-based MCU and programmed using Assembly. </p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="content">
-    <img src="/w3images/nature.jpg" alt="RPN" style="width:216px;height:144px;">
-      <h3>RPN</h3>
-      <p>This is a calculator built using C that takes in Reverse Polish Notation (RPN) style calculations. The cool thing about RPN is that it simplifies operations and saves stack memory.</p>
-    </div>
-  </div>
- 
-<!-- END GRID -->
-</div>
+
+  <!-- MAIN (Center website) -->
+  <div class="main2">
 
 
-<!-- END MAIN -->
-</div>
+    <h1 style="color:rgb(255, 255, 255)">PROJECTS</h1>
+
+    <div class="h2">
+
+      Here you can find a list of interesting projects I've done over the years. <br><br>
+
+    </div>
+
+    <div class="h2">
+
+      Firmware/Hardware projects:
+
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="ACSC2.jpg" alt="ACSC" style="width:250px; height:144px;">
+          <h3>AC Signal Capturer</h3>
+          <p>This is a C program implemented on an EFM8 system to analyze two AC signals and return the RMS voltages,
+            periods, and phase differences on a backlit display.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="bacc2.jpg" alt="Baccarat" style="width:250px;height:144px;">
+          <h3>Baccarat</h3>
+          <p>This is an implementation of the classic board game Baccarat using SystemVerilog HDL synthesized on a
+            DE1-SoC FPGA board. It uses an internal clock-based algorithm to emulate the dealt cards.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="cup.png" alt="CupCap" style="width:250px;height:144px;">
+          <h3>Water Level Measurer</h3>
+          <p>This is an tool that audibly outputs the amount of water in a plastic cup by using the dielectric
+            properties of liquids. This was built on a 8051-based MCU and programmed using Assembly. </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <img src="rtos2.jpg" alt="rtos" style="width:250px;height:144px;">
+          <h3>Emb. RTOS</h3>
+          <p>This was my first implementation of an RTOS on an embedded system (STM32F411). I used C and ARM assembly to
+            program the
+            kernel and included support for safe concurrency.
+          </p>
+        </div>
+      </div>
+
+      <!-- END GRID -->
+    </div>
+
+    <div class="h2">
+
+      Software projects:
+
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="xxx.jpg" alt="ACSC" style="width:216px;max-height:144px;">
+          <h3>Document Analyzer</h3>
+          <p>This is a text analyzer that produces quantitative measurements based on specific text metrics and
+            criteria. It accepts both text files and webpages as input.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="xxx.jpg" alt="Baccarat" style="width:216px; max-height:144px;">
+          <h3>WikiMediator</h3>
+          <p>This is a wrapper made for the jwiki API which records Wikipedia queries made by a user. It supports
+            multithreading and is built to be thread-safe.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="xxx.jpg" alt="CupCap" style="width:230px;max-height:144px;">
+          <h3>Malware Modelling</h3>
+          <p>This project simulates malware sent from a user into a network, keeps track of infection rates, and can
+            determine the optimal way for malware propagation.</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <img src="xxx.jpg" alt="rtos" style="width:216px;max-height:144px;">
+          <h3>OISC Machine</h3>
+          <p>This project simulates OISC CPU architecture and produces the memory map needed to perform certain
+            arthimetic operations.
+          </p>
+        </div>
+      </div>
+
+      <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+  </div>
 
 </body>
+
 </html>

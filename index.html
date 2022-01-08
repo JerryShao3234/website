@@ -2,214 +2,205 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://en.wikipedia.org/wiki/Main_Page">
+
 <body>
 
-<head>
+  <head>
 
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    
+
     <style>
-        * {
-			box-sizing: border-box;
-          }
-	    
-	    #navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+      * {
+        box-sizing: border-box;
+      }
 
-body {
-    margin: 0;
-    background: #333;
-}
+      #navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
 
-div.ex2 {
-  width: frame;
-  padding: 100px;
-  box-sizing: border-box;
-  background-color: #333;
-  font-size: 25px;
-  color: white;
-}
-	    
+      body {
+        margin: 0;
+        background: #333;
+      }
 
-/* Page content */
-.content {
-  padding: 16px;
-}
+      div.ex2 {
+        width: frame;
+        padding: 100px;
+        box-sizing: border-box;
+        background-color: #333;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-	z-index: 999;
-}
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-	   	 .parallax {
- 			 /* The image used */
- 			 background-image: url('image.png');
+      /* Page content */
+      .content {
+        padding: 16px;
+      }
 
-			  /* Full height */
-			   min-height: 345px; 
+      /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+      }
 
- 			 /* Create the parallax scrolling effect */
- 			 background-attachment: fixed;
-			  background-position: center;
-			  background-repeat: no-repeat;
- 			 background-size: cover;
-		}
-	    
-	    
-	    	#header2{
- 
-     	#header{
-  position: absolute;
-  z-index: 1000;
-  top: 200px;
-  left: 200px;
-}
-			
-		}
+      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky+.content {
+        padding-top: 60px;
+      }
 
-		.column {
-			flex: 33.33%;
-			padding: 100px;
-		}
+      .parallax {
+        /* The image used */
+        background-image: url('d372.gif');
 
-		/* Clearfix (clear floats) */
-		.row {
-			display: flex;
-		}
-        
-		.header {
-			padding: 60px;
-			text-align: center;
-			background: #333;
-			color: white;
-			font-size: 30px;
-		}
-        
-		.img {
-			float: left;
-			width:  100px;
-			height: 100px;
-			object-fit: cover;
-		}
-	    
-	 	   .sticky {
-		  position: fixed;
-		  top: 0;
-		  width: 100%;
-		}
-	    
-	    .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        /* Full height */
+        min-height: 385px;
 
-  #navbar {
-  overflow: hidden;
-  background-color: #333;
-  }
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-  #navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  }
 
-  #navbar a:hover {
-  background-color: #ddd;
-  color: black;
-  }
+      
 
-  #navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-  }    
- }
-</style>
-    
-</head>
-<body>
-	
-<div id="navbar">
-  <a class="active" href="index.html">Home</a>
-  <a href="https://github.com/JerryShao3234 "target="_blank">GitHub</a>
-  <a href="test.html">Projects</a>
-  <a href="mil.html">Blog</a>
-</div>
-	
-<div class="parallax"></div>
-	<!-- <h1 id="header2">Text</h1> -->
-	<div class="overlay-text" style="width: 75%; min-width: 350px;">
-        <h2 style="padding: 0 20px; text-align: center;">
-            <span style="font-size: 60pt; font-family: 'Architects Daughter', lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #FFFFFF; text-align: center;">Welcome!</span>
-        </h2>
+      .column {
+        flex: 33.33%;
+        padding: 100px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row {
+        display: flex;
+      }
+
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: #333;
+        color: white;
+        font-size: 30px;
+      }
+
+      .img {
+        float: left;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #navbar a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="navbar">
+      <a class="active" href="index.html">Home</a>
+      <a href="https://github.com/JerryShao3234 " target="_blank">GitHub</a>
+      <a href="test.html">Projects</a>
+      <a href="mil.html">Blog</a>
     </div>
-<div class="parallax"></div>
-	
-  <div class="header">
-  <h1>My name is Jerry Shao</h1>
-  <p>This is my online portfolio and place to blog</p>
-  <p>Please feel free to look around</p>
-  </div>
-    
-    <div class="ex2">  
-    <p>I'm a Computer Engineering student at UBC.</p>
-    <p>I enjoy software and firmware coding as well as FPGA design.</p>
-    <p>One of my favourite hobbies is exploring engineering application to military design. These include tanks, missiles, and fighter planes.</p>
+
+    <div class="parallax"></div>
+    <!-- <h1 id="header2">Text</h1> -->
+    <div class="overlay-text" style="width: 75%; min-width: 350px;">
+      <h2 style="padding: 0 20px; text-align: center;">
+        <span
+          style="font-size: 60pt; font-family: 'Architects Daughter', lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #dd5252; text-align: center;">Hello!</span>
+      </h2>
     </div>
-	    
-<div class="row" >
-  <div class="column">
-    <a href="https://www.ubc.ca/">
-    <img src="UBC.png" alt="UBC" style="width:198px;height:258px;">
-    </a>
-  </div>
-  <div class="column">
-    <a href="https://ece.ubc.ca/">
-    <img src="ece.png" alt="ECE" style="width:261px;height:260px;">
-    </a>
-  </div>
-  <div class="column">
-    <a href="https://www.ieee.org/membership/index.html">
-    <img src="IEEE-Logo.jpg" alt="IEEE" style="width:300px;height:260px;">
-    </a>
-  </div>
-</div>
-	
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+    <div class="parallax"></div>
 
 
-	
-</body>
+    <div class="ex2">
+      <p>I'm glad you found my corner of the internet. This is my personal website where I update my projects and
+        occasionally blog. You can find my projects with simple descriptions, or if you prefer, the entire thing directly on GitHub.</p>
+      <p>About me: <br>
+        I am a Computer Engineering student at UBC. Appreciating the efficiency of firmware development as well as
+        enjoying the limitless capabilities of modern, high-level languages, I strive to produce quality code in both
+        respects.</p>
+      <p>Aside from the constant flow of my engineering studies, I enjoy history, science fiction, good movies, and other domains of engineering.
+        These allow me to appreciate how far and how fast the acceleration of technology has gone. For example, the gif above shows a fighter jet demonstrating its thrust vectoring engines in a high-G maneuver, just a couple generations after the first plane was invented.</p>
+      <!-- <p>Only from an engineering perspective can the feats of modern history truly be appreciated. </p> -->
+    </div>
+
+
+
+    <script>
+      window.onscroll = function () { myFunction() };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      function myFunction2() {
+        const img = document.getElementById("gif");
+        img.style = "display: none;";
+        img.style = "display: block;";
+        setTimeout(() => {
+          img.src = img.src;
+        }, 0);
+      }
+    </script>
+
+
+
+  </body>
+
 </html>
